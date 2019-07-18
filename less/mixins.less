@@ -1,1 +1,16 @@
 // Mixins in here
+
+.bdr(){
+    border:1px solid red;
+}
+
+.flex(@dir,@just){
+    display: flex;
+    flex-direction:@dir;
+    justify-content:@just;
+}
+
+.centFull(){
+    width: 100%;
+    margin: 0 auto;
+}
