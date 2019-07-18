@@ -4,32 +4,24 @@ header{
     .topNav{
         .flex(row,space-between);
         margin:20px auto;
+        @media @mobile{
+            flex-direction:column;
+            align-items: center;
+            .centFull();
+        }
     }
+
     nav{
-        .flex(row,space-between);
+        .flex(row,space-around);
         align-content: center;
         width:40%;
         margin-right:40px;
         a{
             margin-top:10px;
         }
-    }
-
-}
-
-.intro{
-    border-top:2px dashed @navigation-border;
-    div{
-        margin-bottom:20px;
-        border-bottom:2px dashed @navigation-border;
-        img{
-            .room();
-        }
-        h2{
-            .room();
-        }
-        p{
-            .room();
+        @media @mobile{
+            .centFull();
         }
     }
+
 }
