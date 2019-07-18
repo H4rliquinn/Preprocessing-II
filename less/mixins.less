@@ -1,1 +1,31 @@
 // Mixins in here
+
+.bdr(){
+    border:1px solid red;
+}
+
+.flex(@dir,@just){
+    display: flex;
+    flex-direction:@dir;
+    justify-content:@just;
+}
+
+.centFull(){
+    width: 100%;
+    margin: 0 auto;
+}
+
+.room{margin-bottom:20px;}
+
+.button(@w:200px,@bak:@button-bg){
+    width:@w;
+    height:40px;
+    background:@bak;
+    border-radius: 10px;
+    veritcal-align:middle;
+    text-align: center;
+    color:white;
+    padding-top:12px;
+    font-size:1.6rem;
+    font-weight:500;
+}

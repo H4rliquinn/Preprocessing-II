@@ -15,12 +15,14 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-weight: bold;
+  font-size: 4.5rem;
 }
 
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+  font-weight:bold;
 }
 
 h4 {
@@ -32,6 +34,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  font-weight:bold;
 }
 
 img {
@@ -41,6 +44,15 @@ img {
 
 .container {
   max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+  .centFull();
+  @media @mobile{
+    width:90%;
+    margin:0px 20px;
+  }
+}
+
+a{
+  font-size: 1.6rem;
+  text-decoration:none;
+  color:black;
 }
