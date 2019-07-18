@@ -3,13 +3,15 @@ header{
     .centFull();
     .topNav{
         .flex(row,space-between);
+        margin:20px auto;
     }
-    .nav{
-        .flex(row,center);
+    nav{
+        .flex(row,space-between);
         align-content: center;
+        width:40%;
+        margin-right:40px;
         a{
-            width:20%;
-            .bdr();
+            margin-top:10px;
         }
     }
 
@@ -17,4 +19,17 @@ header{
 
 .intro{
     border-top:2px dashed @navigation-border;
+    div{
+        margin-bottom:20px;
+        border-bottom:2px dashed @navigation-border;
+        img{
+            .room();
+        }
+        h2{
+            .room();
+        }
+        p{
+            .room();
+        }
+    }
 }
